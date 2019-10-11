@@ -101,17 +101,12 @@ object TryExercises {
     }
 
   /**
-    * Create an Employee data type with three parameters:
+    * We have an Employee data type with three parameters:
     * 1. name: String
     * 2. age: Int
     * 3. hasDirectReports: Boolean
     */
-
-  trait Employee
-
-  /**
-    * Now remove `import TryTestTypes._` from `TryExercisesTest.scala`
-    */
+  case class Employee(name: String, age: Int, hasDireactReports: Boolean)
 
   /**
     * Create a CSV parser to safely create an Employee
